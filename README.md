@@ -16,7 +16,7 @@
 1. User will be able to update 
 1. User will be able to delete cards pertaining freight that has been delivered and no longer tracking
 ## Flask back-end Models for product tracking:
-`` class Product(Model):
+` class Product(Model):
     name = CharField()
     cost_of_load = CharField()
     trucking_company = CharField()
@@ -27,8 +27,7 @@
     num_of_pallets = CharField()
     originating_port = CharField()
     recent_terminal = CharField()
-    date_last_terminal = CharField()
-
+    date_last_terminal = CharField() `
 
 ## Stretch Goals:
 1. Attach Map API within the dashboard user card, allowing the user to view a map for better user experience
@@ -37,18 +36,17 @@
 1. Let's also build a virtual environment. 
 1. Virtual environments allow us to have multiple versions of Python on the same system so we can have different versions of both Python and the packages we are using on our computers.
 
-## Clone (don't fork) our FlaskBackEnd app for this portion of into your directory.
-Navigate inside app, confirm you are on the master branch (git branch), that you have no changes on the master branch (git status), and then create a new branch: git checkout -b indexCreateShow
+## Setting up environment for production development
 # Run the following commands:
-`` virtualenv .env -p python3
-`` source .env/bin/activate
-`` (If virtualenv isn't recognized, you may need to run pip3 install virtualenv.)
+` virtualenv .env -p python3 `
+` source .env/bin/activate `
+` (If virtualenv isn't recognized, you may need to run pip3 install virtualenv.) `
 
 ## Notice that (.env) is now prepended to your command line. 1. Make sure that you see that when you're working on your Flask app.
 
 ## Now let's set up our dependencies by running the following commands (if you get an error regarding psycopg2, try running pip3 install psycopg2-binary instead):
-`` pip3 install flask-bcrypt peewee flask psycopg2 flask_login flask_cors
-pip3 freeze > requirements.txt
+` pip3 install flask-bcrypt peewee flask psycopg2 flask_login flask_cors `
+` pip3 freeze > requirements.txt `
 1. We'll run the Flask app like any other app.
 
 1. This process is similar to what we did with our Express apps, but we just do the process backwards. Instead of first creating the file that keeps track of our dependences (like package.json did in Express), we install our app and dependences(the pip3 install command). Then, we save all our dependencies to a text file that will keep track of them (the pip3 freeze command) within our virtualenv.
@@ -72,21 +70,21 @@ from flask import Flask
 app = Flask(__name__)
 
 # The default URL ends in / (e.g., "my-website.com/").
-@app.route('/')
+` @app.route('/')
 def index():
-    return 'hi'
+    return 'hi' `
 
 # Run the app when the program starts!
-DEBUG = True
-PORT = 8000
-if __name__ == '__main__':
-    app.run(debug=DEBUG, port=PORT)
+`   DEBUG = True
+    PORT = 8000
+    if __name__ == '__main__':
+        app.run(debug=DEBUG, port=PORT) `
 To run our server, we will run this command:
 
 1. python3 app.py
 
 ## Now go to:
 
-`` http://localhost:8000/
+` http://localhost:8000/ `
 
 1. You made a Flask web app!
