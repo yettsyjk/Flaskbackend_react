@@ -7,7 +7,7 @@
 1. Capstone project Trello link: [https://trello.com/b/wDbzPVBC]
 
 ## Reason for Freight Tracking App
-1. My goal is to create a better form of tracking LTL Freight for businesses with 1 Logistic Manager to accurately track incoming freight and better report to business owner.
+1. My goal is to create a better form of tracking Less-Than-Truck-Load (LTL) Freight for businesses with 1 Logistic Manager to accurately track incoming freight, resulting in improved reporting to business owner(s).
 ## LTL Freight Tracking App created with Flask Python3 back-end and React Javascript for front-end.
 ## 
 ## User Story:
