@@ -88,3 +88,8 @@ To run our server, we will run this command:
 ` http://localhost:8000/ `
 
 1. You made a Flask web app!
+
+##Minimum Viable Product
+- MVP: To allow user to create, read, update and delete entries
+- MVP+: To allow user to archive data and review overal cost of loads of simialr size and originating loading terminals.
+- MVP++: Provide user capability to add weight of load to data
