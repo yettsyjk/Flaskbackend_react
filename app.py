@@ -22,8 +22,8 @@ import models
 from resources.products import products
 from resources.users import users 
 
-CORS(products, origins=['http://localhost:3000', "https://git.heroku.com/trackingfreight.git"], supports_credentials = True)
-CORS(users, origins=['http://localhost:3000', "https://git.heroku.com/trackingfreight.git"], supports_credentials= True)
+CORS(products, origins=['http://localhost:3000', "https://trackingfreight.herokuapp.com"], supports_credentials = True)
+CORS(users, origins=['http://localhost:3000', "https://trackingfreight.herokuapp.com"], supports_credentials= True)
 #login
 @login_manager.user_loader
 def load_user(userid):
