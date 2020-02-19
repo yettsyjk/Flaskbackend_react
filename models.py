@@ -7,11 +7,11 @@ from flask_login import UserMixin
 
 #DATABASE
 # DATABASE = SqliteDatabase('products.sqlite')
-#replace your database definition withi this block
+#replace your database definition with this block
 if 'ON HEROKU' in os.environ:
     DATABASE = connect(os.environ.get('DATABASE_URL'))
 else:
-    DATABASE = PostgresqlDatabase('products_app')
+    DATABASE = SqliteDatabase('products.sqlite')
 
 #MODELS
 class User (UserMixin, Model):
