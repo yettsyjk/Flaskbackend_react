@@ -3,7 +3,7 @@
 1. Let's connect [www.linkedin.com/in/yettsy-jo-knapp] [www.github.com/yettsyjk]
 1. Capstone Project February 2020
 1. Flask back-end repo found on my github: [https://github.com/yettsyjk/Flaskbackend_react.git]
-1. React front-end repo found on my guthub: [https://github.com/yettsyjk/ReactFrontEnd_Flask.git]
+1. React front-end repo found on my github: [https://github.com/yettsyjk/ReactFrontEnd_Flask.git]
 1. Capstone project Trello link: [https://trello.com/b/wDbzPVBC]
 
 ## Reason for Freight Tracking App
